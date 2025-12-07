@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seventeen Pomodoro</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Seventeen Pomodoro</h1>
+
+        <div class="mode-toggle">
+            <button id="focusbtn" class="active">Focus 25</button>
+            <button id="breakBtn">Break 5</button>
+        </div>
+
+        <div id="timer" class="timer">25:00</div>
+
+        <div class="controls">
+            <button id="startPausebtn" class="btn-primary">Start</button>
+            <button id="resetBtn" class="btn-primary">Reset</button>
+        </div>
+
+        <div id="status" class="status">Ready to focus!</div>
+
+<div class="vibe-toggle">
+  <label class="switch">
+    <input type="checkbox" id="vibeToggle">
+    <span class="slider round"></span>
+  </label>
+  <p class="toggle-label">SVT Mix</p>
+</div>
+
+<p class="current-track">
+  Now playing: <span id="currentTrack">Cheers to youth</span>
+</p>
+
+<div class="lofi-choices">
+    <button class="lofi-option active" data-src="assets/Cheers to youth.mp3">Cheers to youth</button>
+    <button class="lofi-option" data-src="assets/Circles.mp3">Circles</button>
+    <button class="lofi-option" data-src="assets/Kidult.mp3">Kidult</button>
+</div>
+
+<audio id="lofi" loop src="assets/Cheers to youth.mp3">
+  Your browser does not support the audio element. 
+</audio>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

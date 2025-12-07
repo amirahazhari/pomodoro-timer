@@ -1,25 +1,3 @@
-
-If ANY of these exist and are not closed properly → GITHUB WILL BREAK FORMATTING.
-
----
-
-# 🔥 STEP 2 — DELETE EVERY ` ``` ` IN YOUR EXISTING README.MD
-
-Yes — **remove all triple backticks first.**
-
-Once the file is clean, GitHub will start reading Markdown normally again.
-
----
-
-# 🔥 STEP 3 — NOW paste the README BELOW (this one is PURE MARKDOWN, no fences)**
-
-👉 **THIS IS SAFE. THIS WILL NOT BREAK GITHUB.**  
-👉 **THIS WILL RENDER PERFECTLY.**
-
-Copy the text EXACTLY as shown below:
-
----
-
 # SEVENTEEN Pomodoro Timer
 
 A lightweight, browser-based Pomodoro timer built using **HTML, CSS, and JavaScript**.  
@@ -122,8 +100,3 @@ All UI styling is inside `style.css`.
 
 - No copyrighted audio included.  
 - Add your own audio files inside `/assets`.
-
----
-
-
-

@@ -1,59 +1,129 @@
-SEVENTEEN Pomodoro Timer
 
-A simple and lightweight Pomodoro productivity timer with a subtle SEVENTEEN-inspired interface.
-Built using HTML, CSS, and JavaScript, featuring a clean glassmorphism UI and optional background music selections.
+If ANY of these exist and are not closed properly → GITHUB WILL BREAK FORMATTING.
 
-Features
+---
 
-25/5 Pomodoro cycle (Focus + Break modes)
+# 🔥 STEP 2 — DELETE EVERY ` ``` ` IN YOUR EXISTING README.MD
 
-Start, Pause, and Reset controls
+Yes — **remove all triple backticks first.**
 
-SVT Mix toggle with a custom-designed switch
+Once the file is clean, GitHub will start reading Markdown normally again.
 
-Track selector for choosing between multiple lofi/SVT-inspired mixes
+---
 
-Displays the currently playing track
+# 🔥 STEP 3 — NOW paste the README BELOW (this one is PURE MARKDOWN, no fences)**
 
-Glassmorphism card UI with soft, minimal styling
+👉 **THIS IS SAFE. THIS WILL NOT BREAK GITHUB.**  
+👉 **THIS WILL RENDER PERFECTLY.**
 
-Auto-switches between focus and break modes
+Copy the text EXACTLY as shown below:
 
-Getting Started
+---
 
-Download or clone the repository
+# SEVENTEEN Pomodoro Timer
 
-Open index.html in your browser
+A lightweight, browser-based Pomodoro timer built using **HTML, CSS, and JavaScript**.  
+The application features Pomodoro session logic, background audio playback, track selection, and a glassmorphism UI.
 
-Use the toggle to enable or disable the background mix
+## Overview
 
-Select a track
+This project includes:
 
-Press Start to begin the Pomodoro cycle
+- 25/5 Pomodoro cycle (Focus + Break)  
+- Start, pause, and reset controls  
+- Background audio toggle  
+- Selectable audio tracks  
+- Display of currently playing track  
+- Automatic transition between modes  
+- No frameworks required  
 
-No additional setup or dependencies are required.
+## Features
 
-Customization
+### Pomodoro Logic
+- Countdown using `setInterval`  
+- Shared `timeRemaining` state  
+- Auto-switch on session completion  
+- `clearInterval` prevents duplicate timers  
 
-You may replace the audio files in the /assets folder with your own mixes or background tracks.
-If filenames are changed, update the data-src attributes in index.html.
+### Audio System
+- Native HTML `<audio>` element  
+- Tracks loaded via `data-src` attributes  
+- Toggle controls playback  
+- Continues playing when switching tracks (if enabled)  
 
-The visual theme can also be customized through style.css.
+### UI Architecture
+- Glassmorphism card  
+- Custom CSS toggle  
+- Active track highlighting  
+- Clean markup structure  
 
-Future Enhancements (Optional)
+## Project Structure
 
-Session tracking and statistics
+    .
+    ├── index.html
+    ├── script.js
+    ├── style.css
+    └── assets/
+        ├── Lofi 1.mp3
+        ├── Lofi 2.mp3
+        └── Lofi 3.mp3
 
-Custom timers (e.g., 50/10 or user-defined durations)
+## Getting Started
 
-Sound effects for session transitions
+### 1. Clone the repository
 
-Mobile layout improvements
+    git clone https://github.com/your-username/seventeen-pomodoro.git
 
-More detailed theme options
+### 2. Open the app  
+Open `index.html` in your browser.
 
-Notes
+### 3. Enable background audio  
+Use the **SVT Mix** toggle switch.
 
-This project is inspired by SEVENTEEN aesthetics but does not include copyrighted audio.
+### 4. Select a track  
+Choose any of the available tracks.
 
-All music files should be user-supplied.
+### 5. Start the Pomodoro  
+Click **Start**.
+
+## Technologies Used
+
+| Component | Technology |
+|----------|------------|
+| UI       | HTML5, CSS3 |
+| Logic    | JavaScript (ES6) |
+| Audio    | Native Audio API |
+
+## Customization
+
+### Change audio tracks  
+Replace files in `assets/` and update:
+
+    data-src="assets/MyTrack.mp3"
+
+### Modify timer durations  
+Edit in `script.js`:
+
+    const FOCUS_MINUTES = 25
+    const BREAK_MINUTES = 5
+
+### Edit theme  
+All UI styling is inside `style.css`.
+
+## Potential Enhancements
+
+- User-defined durations  
+- Session stats  
+- Notifications  
+- LocalStorage settings  
+- Improved mobile layout  
+
+## Notes
+
+- No copyrighted audio included.  
+- Add your own audio files inside `/assets`.
+
+---
+
+
+
